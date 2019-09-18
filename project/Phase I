@@ -1,0 +1,161 @@
+CS100 Final Project: Phase I 
+Harshini Chellasamy
+
+User Interface 
+When the program is run, the user will see the following menu. They can enter a integer to navigate through the application. 
+
+Welcome to the CTA Stop App!
+Enter 1 to add a station to the database. 
+Enter 2 to modify a station in the database. 
+Enter 3 to remove a station from the database. 
+Enter 4 to search for a station in the database. 
+Enter 5 to find the nearest station. 
+Enter 6 to generate a path between two stations.
+Enter 7 to exit. 
+
+If the user enters: 
+1 - they will be prompted to enter all information for the station. The station will be added to the array list containing all the station data. 
+2 - they will enter a string (the station name) to modify and be prompted to re-enter data for the station
+3 - they will enter a string (the station name) and the station will be removed from the array list
+4 - they will enter a string (the station name) and the application will return data for stations with that name
+5 - they will enter two doubles for the latitude and longitude and application will return the nearest station 
+6 - they will enter the station names and the application will return the route to take to get between those stations 
+
+Programmer’s Tasks
+create the CTARoute, CTAStation, and GeoLocation classes
+create the CTAStopApp
+create the menu 
+read the file containing the stops 
+create method to add station to array list
+create method to modify station in array list 
+create method to remove station from array list
+create method to search array list and return station information based on the search 
+create method to find nearest station 
+create method to generate a route between the two stations entered
+
+Read Input File/Process Data from Input File/Store the Data
+The file must be declared and then it will be read using a scanner. Process data from the file by going through the file, splitting each element by a comma. Based on the position of each part of the line, it will be stored as a name, latitude, longitude, etc. Then, all of the data will be part of the CTAStation object that is created. Then, its added to the correct CTARoute.
+
+
+
+
+Add Data
+To add data to the arraylist, we create a method that can allow the user to enter information about the new CTAStation to be added. Then, we use the array list add method to add the CTAStation to the list cta. 
+
+Remove Data
+To add data to the array list, we create a method that can allow the user to enter the name of the station they wish to remove. Then we search and select for that element in the array list and remove it using the remove method. 
+
+Modify Data
+To edit data in the array list, we create a method that can allow the user to enter the name of the station they wish to modify. Then we search and select for that element in the array list and prompt users to enter information about that CTAStation. 
+
+Search Data
+To search data, we create a method to go through the array list and see if the entered information matches an element in the array. If it matches, it returns true and it returns the element number. 
+
+Classes
+There will be 3 classes: CTAStation, CTARoute, and GeoLocation 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+UML Diagram
+(emailed to Professor)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Testing
+Welcome to the CTA Stop App!
+Enter 1 to add a station to the database. 
+Enter 2 to modify a station in the database. 
+Enter 3 to remove a station from the database. 
+Enter 4 to search for a station in the database. 
+Enter 5 to find the nearest station. 
+Enter 6 to generate a path between two stations.
+Enter 7 to exit.
+
+1: Be able to Enter values of the CTAStation with no issue. Test by printing all stations and noting the appearance of a new station. Repeat a couple of times. 
+
+2: Choose a station to modify and be able to enter new values of the station without an issue. Test by printing all stations and noting a change in the selected station. Repeat a couple of times.
+
+3: Choose a station to remove. Test by printing all stations and noting the missing station. Repeat a couple of times.
+
+4: Be able to enter different station names and display their data. 
+
+5: Enter some coordinates and make sure that it returns the nearest station. Repeat a couple of times. 
+
+6: Enter two stations. Use Google Maps to confirm the route makes sense. Repeat a couple of times. 
+
+7: Make sure the program closes!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
